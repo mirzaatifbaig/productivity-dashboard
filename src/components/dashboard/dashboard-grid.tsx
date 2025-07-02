@@ -79,6 +79,7 @@ export function DashboardGrid() {
 
   const handleDragStart = (event: DragStartEvent) => {
     setActiveId(event.active.id as string);
+    console.log(activeId)
   };
 
   const handleDragEnd = (event: DragEndEvent) => {

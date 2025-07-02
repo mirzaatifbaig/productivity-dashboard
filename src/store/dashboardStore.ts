@@ -143,7 +143,7 @@ export const useDashboardStore = create<DashboardState>()(
         
         const updatedLayouts = layouts.filter(layout => layout.id !== layoutId);
         
-        set((state) => ({
+        set(() => ({
           layouts: updatedLayouts,
           currentLayout: currentLayout?.id === layoutId 
             ? updatedLayouts[0] 
